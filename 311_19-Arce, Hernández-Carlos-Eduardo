@@ -1,0 +1,53 @@
+Como se divide lógicamente un disco duro:
+El Sector de Arranque: Al formatear un volumen, el sector de arranque se crea siempre como primer sector del volumen, para que sea fácil de localizar por el DOS. En él se encuentra información acerca del tamaño, de la estructura del volumen y sobre todo del BOOTSTRAP-LOADER, mediante el cual se puede arrancar el PC desde el DOS. A esta parte se le llama sector de arranque (BOOT).
+La Tabla de Asignación de Ficheros (File Allocation Table) (FAT): Si el DOS quiere crear nuevos archivos, o ampliar archivos existentes, ha de saber qué sectores del volumen correspondiente quedan libres, Estas informaciones las toma la llamada FAT. Cada entrada a esta tabla se corresponde con un número determinado de sectores, que son adyacentes lógicamente en el volumen. Cada uno de estos grupos de sectores se llama Cluster. El tamaño de las diferentes entradas de esta tabla en las primeras versiones del DOS era de 12 bits. con lo que se podían gestionar hasta 4.096 Clusters, correspondiente a una capacidad aproximada de 8 Mbytes. En vista del problema que surgió al aparecer discos duros de capacidades más elevadas, se amplió el tamaño a 16 bits., permitiendo el direccionamiento de un máximo de 65.535 Clusters. Actualmente se está creando FAT’s de hasta 32 bits, para discos duros capaces de almacenar Gigas de información.
+Una o más copias de la FAT: El DOS permite a un programa de formateo crear no sólo una, sino varias copias idénticas de la FAT. Si el DOS encuentra uno de estos medios, cuida todas las copias de la FAT simultáneamente, así que guarda allí los nuevos clusters ocupados o liberados al crear o borrar archivos. Esto ofrece la ventaja de que se puede sustituir la FAT primaria en caso de defecto por una de sus copias, para evitar la pérdida de datos.
+El directorio Raíz: La cantidad máxima de entradas en el directorio raíz se limita por su tamaño, que se fija en el sector de arranque. Ya que el directorio raíz representa una estructura de datos estática, que no crece si se guardan más y más archivos o subdirectorios. De ahí que, dependiendo del tamaño, bien un disco duro o bien de volumen, se selecciona el tamaño del directorio raíz en relación al volumen.
+La Zona de Datos: Es la parte del disco duro en la que se almacena los datos de un archivo. Esta zona depende en casi su totalidad de las interrelaciones entre las estructuras de datos que forman el sistema de archivos del DOS, y del camino que se lleva desde la FAT hacia los diferentes sectores de un archivo.
+
+Tipos de discos duros y sus velocidades
+SAS: Estos discos son muy solicitados para el empleo en servidores, es posible conectarlos hasta con 6 o 7 metros de distancia y de ahí en adelante cubrir hasta 24 computadoras.
+SCSI: Estos discos poseen una interfaz muy pequeña y exige de un controlador para que opere.
+IDE, ATA y PATA: Cada clase de disco duro representa o quiere decir: IDE. Es la abreviatura de componente electrónico integrado. ATA. Es la abreviatura de tecnología avanzada de contacto. PATA. Es la abreviatura de tecnología paralela avanzada.
+SATA: Esta sigla significa tecnología avanzada de contacto. Y se distingue por funcionar con una velocidad cercana a los 150 megabytes por segundo.
+SATA 2: Este dispositivo dispone de mejor capacidad debido a que funciona hasta con 300 megabytes por segundo, lo que representa que su tiempo de respuesta es muy bueno. DISCO 
+DURO SATA 2 se diferencia en comparación con el SATA es que realiza sus actividades a 300Megabytes/segundo.
+
+Tipos de computadoras
+Las supercomputadoras 
+Son un tipo de equipamiento informático diseñado con el propósito de procesar rápidamente enormes cantidades de información. Con el paso de los años la potencia de los procesadores que equipan a estas computadoras ha ido incrementándose hasta valores increíbles, y existe una feroz competencia por sus desarrolladores y fabricantes para que sus supercomputadora sea la más potente disponible en una determinada época. Las supercomputadoras pueden costar cientos de millones miles de dólares y consumir la energía suficiente como para abastecer decenas de casas.
+Otra característica de las supercomputadoras es la enorme cantidad de calor que provocan, de esta manera los fabricantes de estos equipamientos deben preocuparse por el sistema de refrigeración.
+
+Las Minicomputadoras
+Las minicomputadoras son un tipo de dispositivo que se encuentra en un nicho entre los mainframes y las microcomputadoras. Las minicomputadoras son un tercer tipo de computadora capaz de manipular muchos más datos de entrada y salida que las microcomputadoras, también llamadas computadoras personales, aunque algunas minicomputadoras son destinadas a un único usuario, son capaces de controlar centenares de terminales.
+
+Las estaciones de trabajo
+A pesar de que en su momento las estaciones de trabajo o Workstation, como también se las conoce, eran equipos que se utilizaban para tareas que requerían de altos niveles de potencia y estabilidad de proceso, lo cierto es que, con el paso del tiempo, las computadoras personales, menos costosas, han alcanzado tal nivel de performance que llegaron a reemplazar a las Workstations en muchas de las tareas que se realizaban con este tipo de computadora.
+
+Las computadoras personales
+Las computadoras personales, también llamadas microcomputadoras o micros es un tipo de computadora pequeña, pero que en la actualidad ofrece gran capacidad de procesamiento y alta performance.
+
+Las computadoras de escritorio
+Las computadoras personales pueden ser encontradas en los más diversos formatos, pero el tipo de computadora personal más utilizado en la actualidad es la computadora de escritorio, la cual podemos encontrar en todo tipo de escenario y realizando las más variadas tareas.
+
+
+Las computadoras portátiles
+Otro tipo de computadora personal es la llamada notebook, también llamada laptop, la cual básicamente es una computadora con rendimiento y capacidad similares a una computadora de escritorio, pero en un formato que puede ser transportable, debido a que utilizan un monitor del tipo LCD o LED, además de componentes mucho más pequeños y eficientes en términos de uso de energía, un punto más que necesario ya que la principal fuente de alimentación de las computadoras portátiles es una batería.
+
+Como se divide un procesador
+•	Unidad de Control: Unidad encargada de Activar o Desactivar los diferentes componentes del procesador, igualmente se encarga de Interpretar y ejecutar las diferentes instrucciones almacenadas en la memoria principal.
+
+•	Unidad Aritmética y Lógica: Se encarga de realizar la operación de transformación de datos, especialmente las operaciones matemáticas, el cual es denominado FPU (Floating Point Unit, Unidad de coma Flotante).
+
+•	Registros: Se denominan a las áreas de almacenamiento temporal usadas durante la ejecución de las instrucciones.
+
+•	Partes Físicas
+
+•	Encapsulado: Es lo que rodea a la oblea de silicio, dándole consistencia y protección para impedir su deterioro.
+
+•	Zócalo: Lugar donde se inserta el procesador, permitiendo la conexión con el resto del equipo.
+
+•	Chipset: Conjunto de Chips encargados del control de las determinadas funciones del equipo. 
+
+•	Memoria Cache: Parte donde se almacenan los datos con más frecuente.
+
