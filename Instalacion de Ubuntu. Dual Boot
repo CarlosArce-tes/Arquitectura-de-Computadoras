@@ -1,0 +1,106 @@
+              Bootear memoria USB en rufus
+              
+Seleccionar USB con minimo 8 GB de capacidad
+Seleccionar tipo de particion (UEFI o MBR)
+Seleccionar sistema de archivos
+Seleccionar la imagen ISO de Ubuntu
+Aceptar
+
+             Instalar Ubuntu junto a Windows
+             
+Cambiar el orden de arranque en el BIOS
+             Crear particion donde se va instalar Ubuntu
+
+Abrir el explorador de archivos de Windows
+Clic derecho en Equipo
+Administrar
+Administrador de Discos
+Seleccionar el disco que se va particionar
+Clic derecho: reducir volumen
+Establecer el tamaño de la particion
+Aceptar
+
+Apagar computadora
+Meter el USB en una ranura y luego enciende el ordenador pulsando inmediatamente 
+la tecla que ejecute el selector de unidad para el arranque. Por lo general esta
+debería ser F12, pero dependiendo de la BIOS y el PC pueden ser otras como
+F1, F8, F9, F10, TAB o ESC. Cuando veas el menú, selecciona la unidad del USB 
+de arranque y pulsa Enter para arrancar el ordenador a través de él.
+
+Cuando arranques el USB, la primera pantalla que te va a aparecer es la de elegir
+idioma. En ella, simplemente selecciona el idioma que quieras utilizar haciendo 
+click sobre él con el ratón o, si no tienes, seleccionándolo y pulsando Enter.
+
+Una vez elegido el idioma, entrarás en la pantalla principal del USB de Ubuntu.
+En ella vas a poder empezar con la instalación iniciar la distro desde el propio USB.
+Yo te recomiendo que elijas la opción Probar Ubuntu sin instalarlo. Una vez estés dentro
+podrás iniciar la instalación, con la ventaja de que ya habrás podido probar la distro 
+para decidir si es la que definitivamente quieres instalar o prefieres probar con otra 
+primero.
+
+El proceso de instalación puede variar dependiendo de la distribución, aunque muchas de
+ellas comparten las mismas líneas generales. En cualquier caso, nosotros nos vamos a ceñir
+al proceso de Ubuntu, que es el mismo que verás en muchas distribuciones basadas en Debian
+y en ella misma. En él, la primera pantalla es de introducción, y sólo tendrás que elegir
+el idioma y pulsar en Siguiente para continuar.
+
+Ahora le llega el turno a la distribución del teclado. En este apartado, debes elegir cuál
+es la distribución de las teclas que tiene el teclado físico de tu ordenador o portátil para
+que se configuren de manera que la v esté donde la v y la ñ donde la ñ. Por ejemplo, si tienes
+un teclado sin la letra ñ tendrás que buscar la distribución concreta que utilice en vez de 
+la española... o poner la española para utilizar la ñ aunque no la tenga el teclado. 
+Al terminar pulsa Siguiente.
+
+Ahora, llegarás a una pantalla en la que vas a poder conectarte a Internet configurando tu WiFi, algo
+que abrirá la posibilidad a que Ubuntu actualice su sistema además de instalarlo. Pero por defecto 
+estará seleccionada la opción de que prefieres no conectarte a una WiFi en este momento, por lo que tampoco
+pasa nada si estás en un sitio sin conexión. Todas las actualizaciones las podrás hacer después.
+
+En el siguiente paso vas a tener que cómo quieres que sea la instalación. Lo recomendable es elegir la 
+instalación normal, pero también puedes escoger una mínima sin bloatware en la que sólo se instalan las 
+utilidades básicas, y todas las aplicaciones las tendrás que elegir tú seleccionando las que quieras. 
+También puedes optar por instalar varios programas de terceros seleccionando la última opción, que suelen
+ser los drivers privativos de componentes como tu gráfica o la WiFi.
+
+Selecciona la casilla de Más opciones. Con este modo, podrás crear manualmente las particiones en las que
+se instala Ubuntu u otra distribución, algo un poco más completo pero que te va a ayudar a optimizar el 
+rendimiento de la distro.
+
+Primero vamos a crear la partición raíz, que será una partición primaria al principio del espacio, con 
+sistema de ficheros ext4, y punto de montaje /. En cuanto al tamaño, depende un poco de la capacidad de 
+tu disco duro, aunque por lo general es suficiente darle entre 20 y 30 GB para que vaya holgado. Recuerda 
+que este proceso sólo te permite configurar el tamaño en megas, por lo que tendrás que hacer recordar 
+que 1 GB son 1.024 MB.
+
+La siguiente partición que vamos a crear es el área de intercambio. Es recomendable que su tamaño sea del 
+doble de tu memoria RAM, por lo menos en equipos con 2 GB de RAM o menos. Para memorias mayores, suele ser
+recomendable con 2 o 3 GB, aunque si hibernas a menudo el ordenador es mejor dejar el mismo tamaño que la RAM.
+Por lo demás, en Utilizar como debes elegir la opción área de intercambio.
+
+Y por último, tienes que crear la partición en el punto de montaje /home, que es donde irán todas tus descargas 
+y archivos personales. A esta partición le puedes dar el espacio que te quede en el disco duro, ya que es donde irán
+todos los archivos y aplicaciones que descargues.
+
+Una vez tengas todas las particiones preparadas, revisa que esté todo en orden y que tengas las particiones /, /home
+y swap (área de intercambio) preparadas con sus tamaños correctos. Cuando lo revises, pulsa el botón de Instalar ahora
+para empezar a instalar la distribución con la organización que has establecido.
+
+Por último, te aparecerá una ventana en la que se te recuerda que estás a punto de hacer cambios en tu disco duro, lo 
+que quiere decir que si vas a reaprovechar alguna partición se formateará todo y se perderán todos los archivos. Este 
+es un mero trámite, y tienes que pulsar en el botón Continuar para iniciar definitivamente la instalación.
+
+Aunque en algunas distribuciones algunos o todos estos pasos pueden aparecer antes de iniciar incluso la creación de 
+particiones, en Ubuntu son pasos que empiezas a dar mientras el sistema ya está instalándose en tu ordenador. El primer
+paso será el de establecer tu zona horaria para que la distro la tenga en cuenta al a hora de configurar el reloj o 
+aplicar cambios horarios.
+
+Ahora tienes que configurar un nombre de usuario y contraseña para crear tu primer usuario en el equipo. A este, también
+le puedes poner tu nombre real, y puedes elegir otro nombre para el ordenador. La contraseña es obligatoria, pero tras ponerla
+puedes marcar la casilla de Conectarse automáticamente sin pedir la contraseña para que no tengas necesidad de utilizarla. 
+Cuando lo hagas, pulsa Siguiente.
+
+Y una vez hayas dado estos dos últimos pasos, la distribución que hayas elegido empezará a instalarse junto a Windows 10. 
+Si todo ha ido bien, la próxima vez que enciendas el ordenador aparecerá una pantalla en la que podrás elegir qué sistema 
+operativo iniciar, lo que te permitirá utilizar sin problemas tanto Windows como Ubuntu u otra distro que hayas escogido.
+
+
